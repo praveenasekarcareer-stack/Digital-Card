@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Digital Card</title>
+
+
+
+<!-- QR Code Library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #ece6e6;
+  font-weight: bold;
+  color: rgb(18, 17, 17);
+  text-align: center;
+}
+.profile {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: block;
+  margin: -40px auto 5px;
+  border: 4px solid white;
+}
+.container {
+    
+  
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+}
+
+.card {
+  
+  background: #efeef3;
+  margin-top: 20px;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(31, 30, 30, 0.1);
+  overflow: hidden;
+
+}
+
+.cover {
+  height: 140px;
+  background: url("background image.jpeg") no-repeat center;
+  background-size: cover;
+  border-radius: 20px 20px 0 0;
+}
+
+h1 {
+  margin-bottom: 5px;
+}
+
+p {
+  color: #0a0909;
+  white-space: p;
+}
+
+a {
+  display: block;
+  margin: 10px 0;
+  padding: 12px;
+  background: #cfacac;
+  border-radius: 10px;
+  color: rgb(20, 15, 15);
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight:bold;
+  text-decoration: none;
+}
+
+a:hover {
+  background: #1111bb;
+}
+
+.btn {
+  background: #00c853;
+  color: black;
+  font-weight: bold;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+  <div class="card" id="profile">
+    <div class= "cover" id="background"></div>
+   
+   <img src="profile image.jpeg" class="profile" alt="Profile Photo">
+
+    <h1 id="name">Balaji B</h1>
+    <p id="business">SubashiniWeddingCards</p>
+
+
+  <a href="tel:+919283592835"> Call </a>
+
+<a href="mailto:subashiniweddingcards@gmail.com">
+  <i class="fa-solid fa-envelope"></i> Email 
+</a>
+
+  <a href="https://subashinienterprises.in">
+  <i class="fa-solid fa-globe"></i> Website
+</a>
+
+<a href="https://wa.me/c/919283592835">
+  <i class="fa-brands fa-whatsapp"></i> WhatsApp
+</a>
+
+<a href="https://www.instagram.com/subashiniweddingcards">
+  <i class="fa-brands fa-instagram"></i> Instagram
+</a>
+
+<a href="https://www.facebook.com/share/1DUiYa89cU/">
+  <i class="fa-brands fa-facebook"></i> Facebook
+</a>
+
+<a href="https://www.linkedin.com/in/balaji-b-2980501ab/">
+  <i class="fa-brands fa-linkedin"></i> LinkedIn
+</a>
+
+<a href="https://www.youtube.com/@SubashiniTv">
+  <i class="fa-brands fa-Youtube"></i> Youtube
+</a>
+
+<a href="https://x.com/BalajiBayya2024">
+  <i class="fa-brands fa-Twitter"></i> Twitter
+</a>
+
+<a href="https://t.me/subashiniWeddingCards">
+  <i class="fa-brands fa-Telegram"></i> Telegram
+</a>
+
+<a href="https://aratt.ai/user/@balajibayya">
+  <i class="fa-brands fa-Arattai"></i> Arattai
+</a>
+
+<a href="  https://signal.me/#eu/iDxZJ9McmoCAZigXP4c8-wVI1njMd_oOlIelxaIPRwIJyvLjbStIfKwj63aqohcn">
+  <i class="fa-brands fa-Arattai"></i> Signal
+</a>
+
+
+
+
+<a href="https://maps.app.goo.gl/KeeapPqGPYZnEDS67" target="_blank" class="btn">
+  📍 View Location
+</a>
+
+
+  <a href="upi://pay?pa=subashinicards-1@okhdfcbank&pn=Balaji&am=100&cu=INR" target="_blank">Pay Now</a>
+
+    <a href="upi://pay?pa=subashinicards-1@okhdfcbank&pn=Balaji%20B&aid=uGICAgIC6sOeAKA" target="_blank">Pay Via UPI</a>
+
+
+
+ 
+</div>
+<script>
+
+
+// Download Contact (.vcf)
+function downloadVCard() {
+  const vcard = `
+BEGIN:VCARD
+VERSION:3.0
+FN:Balaji B
+ORG:subashiniweddingcards 
+TEL:+919283592835
+EMAIL:subashiniweddingcards
+END:VCARD
+`;
+
+  const blob = new Blob([vcard], { type: "text/vcard" });
+  const url = window.URL.createObjectURL(blob);
+
+  window.location.href = url;
+
+  // const a = document.createElement("a");
+  // a.href = url;
+  // a.download = "contact.vcf";
+  // a.click();
+}
+</script>
+</body>
+</html>
