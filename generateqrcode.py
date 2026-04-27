@@ -20,7 +20,7 @@ qr.make(fit=True)
 img_qr = qr.make_image(fill_color="black", back_color="white").convert('RGB')
 
 # Load logo (use smaller image)
-logo = Image.open("profile image.jpeg")
+logo = Image.open("background image.jpeg")
 
 # Resize logo
 qr_width, qr_height = img_qr.size
